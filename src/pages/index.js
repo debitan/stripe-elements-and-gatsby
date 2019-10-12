@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import { Elements, StripeProvider } from 'react-stripe-elements'
 
 import items from '../api'
-import SEO from "../components/SEO"
+// import SEO from "../components/SEO"
 import Product from "../components/Product"
 import Cart from '../components/Cart/Cart'
 import CheckoutForm from '../components/CheckoutForm'
@@ -80,7 +80,7 @@ function IndexPage() {
 
   return (
   <div>
-    <SEO title="Home" />
+    {/* <SEO title="Home" /> */}
     <AppHeader>
       <AppLogo src={logo} alt="logo"/>
       <AppHeaderText>Dreamcast Shop</AppHeaderText>
