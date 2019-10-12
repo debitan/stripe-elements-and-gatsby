@@ -7,7 +7,7 @@ import SEO from "../components/SEO"
 import Product from "../components/Product"
 import Cart from '../components/Cart/Cart'
 import CheckoutForm from '../components/CheckoutForm'
-import logo from '../../public/icons/logo.svg'
+import logo from '../images/logo.svg'
 
 const AppHeader = styled('header')`
   background-color: #282c34;
