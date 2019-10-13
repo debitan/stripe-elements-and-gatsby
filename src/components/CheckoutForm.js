@@ -16,7 +16,7 @@ const CheckoutFormWrapper = styled('form')`
   text-align: center;
 `
 
-const CheckoutFormButtom = styled('button')`
+const CheckoutFormButton = styled('button')`
   display: inline-block;
   margin: 0 0 1rem 0;
   padding: 0.85em 1em;
@@ -44,7 +44,7 @@ const CheckoutFormError = styled('div')`
   color: #dc4545;
 `
 
-const StyledCardElemet = styled(CardElement)`
+const StyledCardElement = styled(CardElement)`
   display: block;
   margin: 0.5rem auto 1.5rem;
   max-width: 500px;
@@ -92,13 +92,13 @@ function CheckoutForm({ stripe, totalCost }) {
     return (
         <CheckoutFormWrapper onSubmit={submit}>
             <h4>Would you like to complete the purchase?</h4>
-            <StyledCardElemet />
-            <CheckoutFormButtom
+            <StyledCardElement />
+            <CheckoutFormButton
                 type="submit"
                 disabled={status === 'submitting'}
             >
                 {status === 'submitting' ? 'Submitting' : 'Submit Order'}
-            </CheckoutFormButtom>
+            </CheckoutFormButton>
             {status === 'error' && (
                 <CheckoutFormError>Something went wrong</CheckoutFormError>
             )}
